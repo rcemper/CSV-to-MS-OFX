@@ -1,0 +1,18 @@
+Class rcc.MONEY.MsgToOp Extends Ens.Request
+{
+
+Property Ballance As %Numeric;
+
+Storage Default
+{
+<Data name="MsgToOpDefaultData">
+<Subscript>"MsgToOp"</Subscript>
+<Value name="1">
+<Value>Ballance</Value>
+</Value>
+</Data>
+<DefaultData>MsgToOpDefaultData</DefaultData>
+<Type>%Storage.Persistent</Type>
+}
+
+}
