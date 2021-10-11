@@ -12,7 +12,7 @@ XData ProductionDefinition
     <Setting Target="Adapter" Name="AccountId">99900777</Setting>
     <Setting Target="Adapter" Name="Overwrite">1</Setting>
   </Item>
-  <Item Name="rcc.MONEY.OFX.BW" Category="" ClassName="rcc.MONEY.OFX.BW" PoolSize="1" Enabled="true" Foreground="true" Comment="" LogTraceEvents="true" Schedule="">
+  <Item Name="rcc.MONEY.OFX.BW" Category="" ClassName="rcc.MONEY.OFX.BW" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Adapter" Name="FilePath">C:\MONEY\ENS\out\</Setting>
     <Setting Target="Adapter" Name="AccountId">BW12001744_Acc</Setting>
     <Setting Target="Adapter" Name="BankId">BW_bank</Setting>
