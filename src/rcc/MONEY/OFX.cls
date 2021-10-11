@@ -7,9 +7,11 @@ ClassMethod Make(
 	Ballance = 0,
 	BankId = "",
 	AcctId = "",
-	Days = 15) As %Status
+	Days = 25) As %Status
 {
- set out=##class(%Stream.FileCharacter).%New()
+#; we need CRLF als line terminator for WIN !!!!	
+#define CRLF out.Write($c(13,10))	
+ set out=##class(%Stream.FileBinary).%New()
  set out.Filename=File
  set since=$ZD($h-Days,8)_"000000[+1:CET]"
  set now=$ZD(+$h,8)_"000000[+1:CET]"
