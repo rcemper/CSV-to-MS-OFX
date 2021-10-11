@@ -30,15 +30,17 @@ ENS	read !,"Start Production ? (yYnN)",new,!
 	do ..Wait()
 }
 
-/// wait for reeults
-ClassMethod Wait(hang = 5)
+/// wait for results
+ClassMethod Wait(hang = 3)
 {
 	if 1	
 	while $t {
 		hang hang
+		write !,"scan output for BW",!
 		do ..DumpBW()
+		write !,"scan output for AT",!
 		do ..DumpAT()
-		read !!,"Continue ? (yYnN)",new#1,! 	
+		read !!,"Continue Scan? (yYnN)",new#1,! 	
 		if $l(new),"yY"[$e(new)
 		}
 	write !,"Bye",!
@@ -67,7 +69,7 @@ ClassMethod Dump(
 		}
 	set nb=0	
 	while 'nb {
-		read !,"select file #:",nb  quit:+nb=0
+		read !,"select file #:",nb,! quit:+nb=0
 		if '$d(li(nb)) set nb=0
 		}
 	quit:'nb '$$$OK
