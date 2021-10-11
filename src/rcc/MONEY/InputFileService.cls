@@ -10,7 +10,6 @@ Method OnProcessInput(
 {
 	set file=$p(pInput.Filename,pInput.Directory,2)
 		,src=$e(file,1,2)
-	$$$LOGINFO("input active >> "_src )
 	set obj=$CLASSMETHOD("rcc.MONEY."_src,"%New")
 	set bal=obj.BallanceGet()
 	set tSC=obj.Load(pInput)
