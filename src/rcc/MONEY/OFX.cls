@@ -9,7 +9,7 @@ ClassMethod Make(
 	AcctId = "",
 	Days = 25) As %Status
 {
-#; we need CRLF als line terminator for WIN !!!!	
+#; need CRLF als line terminator for WIN !!!!	
 #define CRLF out.Write($c(13,10))	
  set out=##class(%Stream.FileBinary).%New()
  set out.Filename=File
