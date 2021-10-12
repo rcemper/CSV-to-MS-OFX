@@ -42,7 +42,7 @@ Optionally you may connect using SMP to production **rcc.MONEY.Production**
 and change file locations for Servise and Operations or   
 adjust BankID and AccountID required for OFX in the 2 Operations.   
 You can apply the same result with less clicking it is all stores in   
-**Class rcc.MONEY.Production** with teh EDI of your choice.
+**Class rcc.MONEY.Production** with the EDI of your choice.
 
 ## How to Test it
 - You can start the production directly from SMP or use 
@@ -50,17 +50,20 @@ You can apply the same result with less clicking it is all stores in
 Open IRIS terminal:  
 ```
  docker-compose exec iris iris session iris
+Node: 210293683a03, Instance: IRIS
+
 USER>do ##class(rcc.MONEY).Init()
-do ##class(rcc.MONEY).Init()
- 
-Enter Ballance AT (7777.77) :
- 
-Enter Ballance BW (33.66) :
- 
+
+Enter Ballance AT () :7777.77
+New Ballance AT = 7777.77
+
+Enter Ballance BW () :666.66
+New Ballance BW = 666.66
+
 Start Production ? (yYnN)y
- 
-14:58:57.768:Ens.Director: Produktion 'rcc.MONEY.Production' startet...
-14:58:58.199:Ens.Director: Produktion 'rcc.MONEY.Production' gestartet.
+
+13:36:15.807:Ens.Director: Production 'rcc.MONEY.Production' starting...
+13:36:15.903:Ens.Director: Production 'rcc.MONEY.Production' started.
 scan output for BW
  
 select file #:
@@ -69,10 +72,28 @@ scan output for AT
  
 select file #:
   
-Continue Scan? (yYnN) 
+Continue Scan? (yYnN) y 
 ```
-After string the production you enter a lop to scan output directories.
-You can also start it indpendently with a hang parameter  
+After starting the production you enter a lop to scan output directories.   
+Now you can cpy the provided samples into the production'S input from
+outside the container with drag an' drop
+```
+ {clonedir}\MONEY\sample\  >>>>  {clonedir}\MONEY\in\
+```
+or inside the container from bash
+```
+    docker-compose exec iris bash
+irisowner@210293683a03:/opt/irisbuild$  ls -l /MONEY/sample/ 
+total 12
+-rwxrwxrwx 1 root root 4430 Oct 12 13:10 AT28A.csv
+-rwxrwxrwx 1 root root 2814 Oct 12 13:10 BW__777.csv
+-rwxrwxrwx 1 root root   12 Oct 12 13:10 GitHub.txt
+irisowner@210293683a03:/opt/irisbuild$ cp -v /MONEY/sample/*.csv /MONEY/in/
+'/MONEY/sample/AT28A.csv' -> '/MONEY/in/AT28A.csv'
+'/MONEY/sample/BW_99_777.csv' -> '/MONEY/in/BW_99_777.csv'
+irisowner@210293683a03:/opt/irisbuild$
+```
+You can also start the scan independently with a hang parameter  
 ```
 USER>do ##class(rcc.MONEY).Wait(2)
 ```
