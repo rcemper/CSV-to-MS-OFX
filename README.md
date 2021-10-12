@@ -121,11 +121,12 @@ Continue Scan? (yYnN) y
 ```
 Stopping the production is also included
 ```
-ENS>do ##class(rcc.MONEY).Stop()
- 
+USER>do ##class(rcc.MONEY).Stop()
+
 Stop Production ? (yYnN)y
- 
-15:08:10.195:Ens.Director: StopProduction wurde initiiert.
-15:08:10.199:Ens.Director: Produktion 'rcc.MONEY.Production' gestoppt.
+
+14:41:56.127:Ens.Director: StopProduction initiated.
+14:41:56.134:Ens.Director: Production 'rcc.MONEY.Production' stopped.
+USER>
 ```
 [Related Article in DC)(https://community.intersystems.com/post/generating-ofx-v1)
