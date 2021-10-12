@@ -68,8 +68,7 @@ select file #:
 scan output for AT
  
 select file #:
- 
- 
+  
 Continue Scan? (yYnN) 
 ```
 After string the production you enter a lop to scan output directories.
@@ -86,3 +85,4 @@ Stop Production ? (yYnN)y
 15:08:10.195:Ens.Director: StopProduction wurde initiiert.
 15:08:10.199:Ens.Director: Produktion 'rcc.MONEY.Production' gestoppt.
 ```
+[Related Article in DC)(https://community.intersystems.com/post/generating-ofx-v1)
