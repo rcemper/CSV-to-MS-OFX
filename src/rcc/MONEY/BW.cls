@@ -5,9 +5,9 @@ Parameter DEFAULTGLOBAL = "^rcc.MONEY.BW.";
 
 Property Ballance As %Numeric [ Transient ];
 
-Property PartnerName As %String(MAXLEN = "") [ SqlColumnNumber = 2, SqlFieldName = NAME ];
+Property PartnerName As %String(MAXLEN = 32, TRUNCATE = 1) [ SqlColumnNumber = 2, SqlFieldName = NAME ];
 
-Property BookInfo As %String(MAXLEN = "") [ SqlColumnNumber = 3, SqlFieldName = MEMO ];
+Property BookInfo As %String(MAXLEN = 255, TRUNCATE = 1) [ SqlColumnNumber = 3, SqlFieldName = MEMO ];
 
 Property BookDate As %String(MAXLEN = "") [ SqlColumnNumber = 4 ];
 
