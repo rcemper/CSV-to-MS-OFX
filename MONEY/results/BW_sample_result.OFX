@@ -97,7 +97,7 @@ NEWFILEUID:NONE
 <TRNAMT>-9.28
 <FITID>5549
 <NAME>Bank
-<MEMO>Entgelt f�r Kontof�hrung
+<MEMO>Entgelt fuer Kontofuehrung
 </STMTTRN>
 <STMTTRN>
 <TRNTYPE>XFER
@@ -105,7 +105,7 @@ NEWFILEUID:NONE
 <TRNAMT>-0.85
 <FITID>5550
 <NAME>Bank
-<MEMO>Entgelt f�r automatisierte Buchungen 35 Stk.
+<MEMO>Entgelt fuer automatisierte Buchungen 35 Stk.
 </STMTTRN>
 <STMTTRN>
 <TRNTYPE>XFER
