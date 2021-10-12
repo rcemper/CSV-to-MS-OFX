@@ -107,7 +107,7 @@ scan output for BW
 1    BW_20211012_134519.OFX
 select file #: 1 
 ```
-[BW_20211012_134519.OFX]()
+[BW_20211012_134519.OFX](https://github.com/rcemper/CSV-to-MS-OFX/blob/master/MONEY/results/BW_sample_result.OFX)
 ```
 scan output for AT
 
