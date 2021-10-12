@@ -45,8 +45,9 @@ You can apply the same result with less clicking it is all stores in
 **Class rcc.MONEY.Production** with the EDI of your choice.
 
 ## How to Test it
+- The banks in my exampke are named AT and BW
 - You can start the production directly from SMP or use 
-- the Init utility to provide account ballances (not delivered by CSV)  
+- The Init utility to provide account ballances (not delivered by CSV)  
 Open IRIS terminal:  
 ```
  docker-compose exec iris iris session iris
