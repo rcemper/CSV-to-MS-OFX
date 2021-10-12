@@ -11,9 +11,9 @@ Property Amount As %String(MAXLEN = "") [ SqlColumnNumber = 3, SqlFieldName = TR
 
 Property BookRef As %String(MAXLEN = "") [ SqlColumnNumber = 4, SqlFieldName = FITID ];
 
-Property BookInfo As %String(MAXLEN = "") [ SqlColumnNumber = 5, SqlFieldName = MEMO ];
+Property BookInfo As %String(MAXLEN = 255, TRUNCATE = 1) [ SqlColumnNumber = 5, SqlFieldName = MEMO ];
 
-Property PartnerName As %String(MAXLEN = "") [ SqlColumnNumber = 6, SqlFieldName = NAME ];
+Property PartnerName As %String(MAXLEN = 32, TRUNCATE = 1) [ SqlColumnNumber = 6, SqlFieldName = NAME ];
 
 Property Ref As %String(MAXLEN = "") [ Private ];
 
