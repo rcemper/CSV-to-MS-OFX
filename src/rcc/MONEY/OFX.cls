@@ -22,7 +22,7 @@ ClassMethod Make(
         if (lin["DTSERV")||(lin["DTEND") set lin=lin_now
         if lin["BANKID" set lin=lin_BankId
         if lin["ACCTID" set lin=lin_AcctId
-        do out.WriteLine(lin)
+        do out.Write(lin),$$$CRLF
     w lin,!    
     }  
 #;MAIN LOOP
@@ -33,20 +33,20 @@ ClassMethod Make(
 	set sc=rs.Prepare(sql)
 	set sc=rs.Execute()
 	while rs.Next() {
-		do out.WriteLine("<STMTTRN>")
-		do out.WriteLine("<TRNTYPE>XFER")
+		do out.Write("<STMTTRN>"),$$$CRLF
+		do out.Write("<TRNTYPE>XFER"),$$$CRLF
 		for col="DTPOSTED","TRNAMT","FITID","NAME","MEMO" {
 			set lin="<"_col_">"_rs.%Get(col)			
-			do out.WriteLine(lin)
+			do out.Write(lin),$$$CRLF
 		}
-	  do out.WriteLine("</STMTTRN>")
+	  do out.Write("</STMTTRN>"),$$$CRLF
+	}
 #;TRAILER
     for i=1:1:9 {
         set lin=$PIECE($TEXT(trailer+i),";;",2) 
         if lin["DTASOF" set lin=lin_now
         if lin["BALAMT" set lin=lin_Ballance
-        do out.WriteLine(lin)
-    }
+        do out.Write(lin),$$$CRLF
 	}
  do out.Flush()
  quit $$$OK 
