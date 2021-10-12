@@ -114,7 +114,7 @@ scan output for AT
 1    AT_20211012_134519.OFX
 select file #: 1 
 ```
-[AT_20211012_134519.OFX]()
+[AT_20211012_134519.OFX](https://github.com/rcemper/CSV-to-MS-OFX/blob/master/MONEY/results/AT_sample_result.OFX)
 ```
 Continue Scan? (yYnN) y
 ```
