@@ -129,4 +129,4 @@ Stop Production ? (yYnN)y
 14:41:56.134:Ens.Director: Production 'rcc.MONEY.Production' stopped.
 USER>
 ```
-[Related Article in DC)(https://community.intersystems.com/post/generating-ofx-v1)
+[Related Article in DC](https://community.intersystems.com/post/generating-ofx-v1)
