@@ -1,4 +1,4 @@
-## CSV to MS-OFX
+## CSV to M$-OFX
 Just in case you never heard about OFX before  
 V1 was an attempt to create a dedicated SGML for banking and ignoring XML. [Details](https://financialdataexchange.org/FDX/About/OFX-Work-Group.aspx?WebsiteKey=deae9d6d-1a7a-457b-a678-8a5517f8a474&hkey=f6ef5a03-c596-49a4-a89a-3f368e1ee43f&OFX_Work_Group_Tab=2#OFX_Work_Group_Tab).    
    
