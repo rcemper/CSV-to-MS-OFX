@@ -65,24 +65,10 @@ Start Production ? (yYnN)y
 13:36:15.807:Ens.Director: Production 'rcc.MONEY.Production' starting...
 13:36:15.903:Ens.Director: Production 'rcc.MONEY.Production' started.
 scan output for BW
- 
 select file #:
- 
 scan output for AT
- 
 select file #:
-  
 Continue Scan? (yYnN) y
-
-scan output for BW
-
-1    BW_20211012_134519.OFX
-select file #: 1 [BW_20211012_134519.OFX]()
-
-scan output for AT
-
-1    AT_20211012_134519.OFX
-select file #: 1 [AT_20211012_134519.OFX]()
 ```
 After starting the production you enter a lop to scan output directories.   
 Now you can copy the provided samples into the production's input from
@@ -106,6 +92,31 @@ irisowner@210293683a03:/opt/irisbuild$
 You can also start the scan independently with a hang parameter  
 ```
 USER>do ##class(rcc.MONEY).Wait(2)
+scan output for BW
+ 
+select file #:
+ 
+scan output for AT
+ 
+select file #:
+  
+Continue Scan? (yYnN) y
+
+scan output for BW
+
+1    BW_20211012_134519.OFX
+select file #: 1 
+```
+[BW_20211012_134519.OFX]()
+```
+scan output for AT
+
+1    AT_20211012_134519.OFX
+select file #: 1 
+```
+[AT_20211012_134519.OFX]()
+```
+Continue Scan? (yYnN) y
 ```
 Stopping the production is also included
 ```
