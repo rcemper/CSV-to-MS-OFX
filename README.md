@@ -72,10 +72,20 @@ scan output for AT
  
 select file #:
   
-Continue Scan? (yYnN) y 
+Continue Scan? (yYnN) y
+
+scan output for BW
+
+1    BW_20211012_134519.OFX
+select file #: 1 [BW_20211012_134519.OFX]()
+
+scan output for AT
+
+1    AT_20211012_134519.OFX
+select file #: 1 [AT_20211012_134519.OFX]()
 ```
 After starting the production you enter a lop to scan output directories.   
-Now you can cpy the provided samples into the production'S input from
+Now you can copy the provided samples into the production's input from
 outside the container with drag an' drop
 ```
  {clonedir}\MONEY\sample\  >>>>  {clonedir}\MONEY\in\
