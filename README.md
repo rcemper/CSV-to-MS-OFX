@@ -130,3 +130,5 @@ Stop Production ? (yYnN)y
 USER>
 ```
 [Related Article in DC](https://community.intersystems.com/post/generating-ofx-v1)
+
+[Related Video](https://youtu.be/bVSlprhsUJ8)
