@@ -49,7 +49,7 @@ ClassMethod Wait(hng = 3)
 
 ClassMethod DumpAT() As %Status
 {
-	set sc=##class(Ens.Director).GetAdapterSettings("rcc.MONEY.OFX.AT",.out)
+	do ##class(Ens.Director).GetAdapterSettings("rcc.MONEY.OFX.AT",.out)
 	set dir=out("FilePath")
 	set file="AT_*.OFX"
 	quit ..Dump(dir,file)
