@@ -16,7 +16,8 @@ Method OP(
 	set bkid=..Adapter.BankId
 	set acid=..Adapter.AccountId
 	set sc=##class(rcc.MONEY.OFX).Make(file,"BW",ball,bkid,acid)
-	quit $$$OK
+	set pResponse.%Concurrency=0
+	quit sc
 }
 
 XData MessageMap
