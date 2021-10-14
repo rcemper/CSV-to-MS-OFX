@@ -1,7 +1,7 @@
 Class rcc.MONEY
 {
 
-/// Utility outside ENS
+/// Utility outside ENS to provide Ballances and start production
 ClassMethod Init()
 {
 AT	set at=##class(rcc.MONEY.AT).%New()
