@@ -31,7 +31,8 @@ ClassMethod Make(
 			_" where not DTPOSTED < '"_since_"'"
 	set rs=##class(%ResultSet).%New()
 	set sc=rs.Prepare(sql)
-	set sc=rs.Execute()
+	set:sc sc=rs.Execute()
+	quit:'sc sc 
 	while rs.Next() {
 		do out.Write("<STMTTRN>"),$$$CRLF
 		do out.Write("<TRNTYPE>XFER"),$$$CRLF
