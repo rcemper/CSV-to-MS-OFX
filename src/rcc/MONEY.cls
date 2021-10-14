@@ -6,24 +6,24 @@ ClassMethod Init()
 {
 AT	set at=##class(rcc.MONEY.AT).%New()
 	set bal=at.Ballance	
-	write !,"Enter Ballance AT ("_bal_") :" read new,!
-	if $l(new) {
-		set new=+$tr(new," ,.","")/100 	
-		write "New Ballance AT = "_new,!
-		set at.Ballance=new
+	write !,"Enter Ballance AT ("_bal_") :" read bnew,!
+	if $l(bnew) {
+		set bnew=+$tr(bnew," ,.","")/100 	
+		write "New Ballance AT = "_bnew,!
+		set at.Ballance=bnew
 		kill at
 		}
 BW	set bw=##class(rcc.MONEY.BW).%New()
 	set bal=bw.Ballance	
-	write !,"Enter Ballance BW ("_bal_") :" read new,!
-	if $l(new) {
-		set new=+$tr(new," ,.","")/100 	
-		write "New Ballance BW = "_new,!
-		set bw.Ballance=new
+	write !,"Enter Ballance BW ("_bal_") :" read bnew,!
+	if $l(bnew) {
+		set bnew=+$tr(bnew," ,.","")/100 	
+		write "New Ballance BW = "_bnew,!
+		set bw.Ballance=bnew
 		kill bw
 		}
-ENS	read !,"Start Production ? (yYnN)",new,!
-	if $l(new),"yY"[$e(new) {
+ENS	read !,"Start Production ? (yYnN)",bnew,!
+	if $l(bnew),"yY"[$e(bnew) {
 		set sc=##class(Ens.Director).StartProduction("rcc.MONEY.Production")
 		if 'sc do $system.OBJ.DisplayError(sc) write !
 		}
@@ -40,8 +40,8 @@ ClassMethod Wait(hang = 3)
 		do ..DumpBW()
 		write !,"scan output for AT",!
 		do ..DumpAT()
-		read !!,"Continue Scan? (yYnN)",new#1,! 	
-		if $l(new),"yY"[$e(new)
+		read !!,"Continue Scan? (yYnN)",bnew#1,! 	
+		if $l(bnew),"yY"[$e(bnew)
 		}
 	write !,"Bye",!
 	quit
@@ -90,8 +90,8 @@ ClassMethod DumpBW() As %Status
 
 ClassMethod Stop(force = 0)
 {
-ENS	read !,"Stop Production ? (yYnN)",new,!
-	if $l(new),"yY"[$e(new) {
+ENS	read !,"Stop Production ? (yYnN)",bnew,!
+	if $l(bnew),"yY"[$e(bnew) {
 		set sc=##class(Ens.Director).StopProduction(30,force)
 		if 'sc do $system.OBJ.DisplayError(sc) write !
 	}
