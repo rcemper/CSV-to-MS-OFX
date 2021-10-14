@@ -31,11 +31,11 @@ ENS	read !,"Start Production ? (yYnN)",bnew,!
 }
 
 /// wait for results
-ClassMethod Wait(hang = 3)
+ClassMethod Wait(hng = 3)
 {
 	if 1	
 	while $t {
-		hang hang
+		hang hng
 		write !,"scan output for BW",!
 		do ..DumpBW()
 		write !,"scan output for AT",!
@@ -47,9 +47,7 @@ ClassMethod Wait(hang = 3)
 	quit
 }
 
-ClassMethod DumpAT(
-	datestring = 0,
-	all = 0) As %Status
+ClassMethod DumpAT() As %Status
 {
 	set sc=##class(Ens.Director).GetAdapterSettings("rcc.MONEY.OFX.AT",.out)
 	set dir=out("FilePath")
@@ -82,7 +80,7 @@ ClassMethod Dump(
 
 ClassMethod DumpBW() As %Status
 {
-	set sc=##class(Ens.Director).GetAdapterSettings("rcc.MONEY.OFX.BW",.out)
+	do ##class(Ens.Director).GetAdapterSettings("rcc.MONEY.OFX.BW",.out)
 	set dir=out("FilePath")
 	set file="BW_*.OFX"
 	quit ..Dump(dir,file)
