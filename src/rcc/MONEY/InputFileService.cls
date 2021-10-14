@@ -12,7 +12,7 @@ Method OnProcessInput(
 		,src=$e(file,1,2)
 	set obj=$CLASSMETHOD("rcc.MONEY."_src,"%New")
 	set bal=obj.BallanceGet()
-	set tSC=obj.Load(pInput)
+	do obj.Load(pInput)
 	set msg=##class(rcc.MONEY.MsgToProc).%New()
 	set msg.Src=src
 	set msg.Ballance=+bal
