@@ -132,3 +132,9 @@ USER>
 [Related Article in DC](https://community.intersystems.com/post/generating-ofx-v1)
 
 [Related Video](https://youtu.be/bVSlprhsUJ8)
+
+###vscode/settings.json
+Settings file to let you immedietly code in VSCode with [VSCode ObjectScript plugin](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript)
+
+###vscode/launch.json
+Config file if you want to debug with VSCode ObjectScript
