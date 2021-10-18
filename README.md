@@ -129,12 +129,15 @@ Stop Production ? (yYnN)y
 14:41:56.134:Ens.Director: Production 'rcc.MONEY.Production' stopped.
 USER>
 ```
+## What's inside the repository
+### Dockerfile
+The simplest dockerfile which starts IRIS and imports code from /src folder into it.   
+Use the related docker-compose.yml to easily setup additional parametes like port number and where you map keys and host folders.
+### .vscode/settings.json   
+Settings file to let you immedietly code in VSCode with [VSCode ObjectScript plugin](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript)
+###  .vscode/launch.json  
+Config file if you want to debug with VSCode ObjectScript
+
 [Related Article in DC](https://community.intersystems.com/post/generating-ofx-v1)
 
-[Related Video](https://youtu.be/bVSlprhsUJ8)
-
-###vscode/settings.json
-Settings file to let you immedietly code in VSCode with [VSCode ObjectScript plugin](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript)
-
-###vscode/launch.json
-Config file if you want to debug with VSCode ObjectScript
+[Related Video](https://youtu.be/bVSlprhsUJ8)   
