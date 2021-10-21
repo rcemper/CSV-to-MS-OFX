@@ -1,6 +1,5 @@
 Class rcc.MONEY
 {
-
 /// Utility outside ENS to provide Ballances and start production
 ClassMethod Init()
 {
@@ -95,5 +94,5 @@ ENS	read !,"Stop Production ? (yYnN)",bnew,!
 	}
 	quit
 }
-
+// trigger quality check
 }
