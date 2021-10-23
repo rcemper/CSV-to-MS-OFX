@@ -47,11 +47,16 @@ You can apply the same result with less clicking it is all stores in
 ## How to Test it
 - The banks in my exampke are named AT and BW
 - You can start the production directly from SMP or use 
-- The Init utility to provide account ballances (not delivered by CSV)  
-Open IRIS terminal:  
+- The Init utility to provide account ballances (not delivered by CSV)
+
+**[By Online Demo](https://csv-to-ms-ofx.demo.community.intersystems.com/terminal/) :**   
+https://csv-to-ms-ofx.demo.community.intersystems.com/terminal/
+  
+**Or IRIS Terminal:**  
 ```
  docker-compose exec iris iris session iris
 Node: 210293683a03, Instance: IRIS
+--------------------------------------------------------------
 
 USER>do ##class(rcc.MONEY).Init()
 
