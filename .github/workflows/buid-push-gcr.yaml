@@ -9,7 +9,7 @@ on:
 env:
   # Change this section according to your needs
   IMAGE_NAME:   csv-to-ms-ofx
-  SERVICE:      csv-to-ms-ofx
+  SERVICE:      iris
   DOMAIN_NAME:  csvtoofx.demo.community.intersystems.com
 # Leave this section untouched  OK
   PROJECT_ID:   iris-community-demos
