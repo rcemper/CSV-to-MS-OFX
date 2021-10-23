@@ -16,7 +16,7 @@ Method OP(
 	set bkid=..Adapter.BankId
 	set acid=..Adapter.AccountId
 	set sc=##class(rcc.MONEY.OFX).Make(file,"BW",ball,bkid,acid)
-	set pResponse.%Concurrency=0
+	set pResponse=##class(Ens.Response).%New()
 	quit sc
 }
 
