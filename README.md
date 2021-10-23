@@ -50,8 +50,8 @@ You can apply the same result with less clicking it is all stores in
 - The Init utility to provide account ballances (not delivered by CSV)
 
 **[By Online Demo](https://csv-to-ms-ofx.demo.community.intersystems.com/terminal/) :**   
-https://csv-to-ms-ofx.demo.community.intersystems.com/terminal/
-https://csv-to-ms-ofx.demo.community.intersystems.com/csp/sys/UtilHome.csp
+https://csv-to-ms-ofx.demo.community.intersystems.com/terminal/     
+https://csv-to-ms-ofx.demo.community.intersystems.com/csp/sys/UtilHome.csp    
   
 **Or IRIS Terminal:**  
 ```
