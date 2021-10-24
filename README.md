@@ -49,9 +49,9 @@ You can apply the same result with less clicking it is all stores in
 - You can start the production directly from SMP or use 
 - The Init utility to provide account ballances (not delivered by CSV)
 
-**[By Online Demo](https://csv-to-ms-ofx.demo.community.intersystems.com/terminal/) :**   
-https://csv-to-ms-ofx.demo.community.intersystems.com/terminal/     
-https://csv-to-ms-ofx.demo.community.intersystems.com/csp/sys/UtilHome.csp    
+**[By Online Demo](https://csv-ofx.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen) :**   
+https://csv-ofx.demo.community.intersystems.com/terminal/     
+https://csv-ofx.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zenp    
   
 **Or IRIS Terminal:**  
 ```
