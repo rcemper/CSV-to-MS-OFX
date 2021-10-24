@@ -51,7 +51,7 @@ You can apply the same result with less clicking it is all stores in
 
 **[By Online Demo](https://csv-ofx.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen) :**   
 https://csv-ofx.demo.community.intersystems.com/terminal/     
-https://csv-ofx.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zenp    
+https://csv-ofx.demo.community.intersystems.com/csp/sys/%25CSP.Portal.Home.zen        
   
 **Or IRIS Terminal:**  
 ```
