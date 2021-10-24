@@ -11,4 +11,4 @@ services:
       - 53773
     volumes:
       - ./:/irisrun/repo
-      - ./MONEY/:/MONEY
+      - ./MONEY/:/opt/irisbuild/MONEY

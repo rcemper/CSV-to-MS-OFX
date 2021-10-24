@@ -13,6 +13,7 @@ USER ${ISC_PACKAGE_MGRUSER}
 COPY src src
 COPY module.xml module.xml
 COPY iris.script iris.script
+COPY MONEY MONEY
 
 RUN iris start IRIS \
     && iris session IRIS < iris.script \
