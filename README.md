@@ -145,9 +145,8 @@ Settings file to let you immedietly code in VSCode with [VSCode ObjectScript plu
 ###  .vscode/launch.json  
 Config file if you want to debug with VSCode ObjectScript
 
-### Code Quality
-![CodeQuality](https://raw.githubusercontent.com/rcemper/CSV-to-MS-OFX/master/CodeQuality.png)
-
 [Related Article in DC](https://community.intersystems.com/post/generating-ofx-v1)
 
 [Related Video](https://youtu.be/bVSlprhsUJ8)   
+
+**Code Quality** in SCREEMSHOTS  
