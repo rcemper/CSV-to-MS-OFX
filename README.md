@@ -149,4 +149,4 @@ Config file if you want to debug with VSCode ObjectScript
 
 [Related Video](https://youtu.be/bVSlprhsUJ8)   
 
-**Code Quality** in SCREEMSHOTS  
+**Code Quality** in SCREENSHOTS  
