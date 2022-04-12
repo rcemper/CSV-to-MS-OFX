@@ -149,4 +149,9 @@ Config file if you want to debug with VSCode ObjectScript
 
 [Related Video](https://youtu.be/bVSlprhsUJ8)   
 
-**Code Quality** in SCREENSHOTS  
+[Demo Server SMP](https://csv-to-ms-ofx.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
+[Demo Server WebTerminal](https://csv-to-ms-ofx.demo.community.intersystems.com/terminal/)    
+        
+**Code Quality**   
+<img width="85%" src="https://openexchange.intersystems.com/mp/img/packages/1475/screenshots/xzdhsvjb7ohiwryxg35mls3hhk.png">
+
