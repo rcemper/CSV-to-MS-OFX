@@ -10,7 +10,7 @@ env:
   # Change this section according to your needs
   IMAGE_NAME:   csv-to-ms-ofx
   SERVICE:      csv-to-ms-ofx
-  DOMAIN_NAME:  csv-ofx.demo.community.intersystems.com
+  DOMAIN_NAME:  csv-to-ms-ofx.demo.community.intersystems.com
 # Leave this section untouched 
   PROJECT_ID:   iris-community-demos
   CLUSTER_NAME: demo
