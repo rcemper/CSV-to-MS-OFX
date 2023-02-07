@@ -3,7 +3,7 @@
   <Document name="csv-to-m$-ofx.ZPM">
     <Module>
       <Name>csv-to-m$-ofx</Name>
-      <Version>0.1.0</Version>
+      <Version>0.1.1</Version>
       <Description>Collect CSV from your bank and transform it to OFX format (by M$)</Description>
 		<Author>
 			<Person>Robert C. Cemper</Person>
