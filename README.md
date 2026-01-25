@@ -1,3 +1,6 @@
+<img src="https://community.intersystems.com/sites/default/files/inline/images/archived.gif" width=100></img>
+<b>&nbsp;no maintenance or update</b>  
+
 ## CSV to M$-OFX
 Just in case you never heard about OFX before  
 V1 was an attempt to create a dedicated SGML for banking and ignoring XML. [Details](https://financialdataexchange.org/FDX/About/OFX-Work-Group.aspx?WebsiteKey=deae9d6d-1a7a-457b-a678-8a5517f8a474&hkey=f6ef5a03-c596-49a4-a89a-3f368e1ee43f&OFX_Work_Group_Tab=2#OFX_Work_Group_Tab).    
@@ -138,7 +141,5 @@ USER>
 [Related Article in DC](https://community.intersystems.com/post/generating-ofx-v1)
 
 [Related Video](https://youtu.be/bVSlprhsUJ8)   
-
-[Demo Server SMP](https://csv-to-ms-ofx.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
-[Demo Server WebTerminal](https://csv-to-ms-ofx.demo.community.intersystems.com/terminal/)    
+   
         
